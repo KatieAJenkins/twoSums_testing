@@ -10,6 +10,10 @@ describe('twoSums', function() {
       assert.deepEqual([5,6], twoSums([1, 2, 3, 4, 5, 6, 7], 13));
     });
 
+    // it('should return one index if index is equal to target', function() {
+    //   assert.deepEqual([2], twoSums([1, 7, 4, 2, 5, 6, 7], 4));
+    // });
+
     it('should return "no indices equal target" when there are no results', function() {
       assert.equal("no indices equal target", twoSums([1, 2, 3, 4, 5, 6, 7], 30));
     });

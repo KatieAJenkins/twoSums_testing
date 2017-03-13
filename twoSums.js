@@ -11,17 +11,15 @@ const target = 13;
 
 function twoSums (array, target){
   for(var i = 0; i < array.length; i++){
-    for(var j = 0; j < array.length; j++){
+    for(var j = i + 1; j < array.length; j++){
       if( array[i] + array[j] === target){
         console.log(array[i]);
         console.log([i,j]);
         return [i,j];
       }
-      }
     }
+  }
   return "no indices equal target";
-  // console.log([i,j]);
-  // return [i,j];
 }
 
 twoSums(array, target);
