@@ -7,23 +7,23 @@
 
 const array = [1, 2, 3, 4, 5, 6, 7];
 
-let target = 13;
+const target = 13;
 
 function twoSums (array, target){
-  return [];
-//   for(var i = 0; i < array.length; i++) {
-//   console.log(array[i]);
-//   console.log(array[i+1]);
-//   if (array[i] + array[i+1] === target) {
-//     return array[i] && array[i+1];
-//     return [];
-//   }
-//   else {
-//     return false;
-//   }
-// }
+  for(var i = 0; i < array.length; i++){
+    for(var j = 0; j < array.length; j++){
+      if( array[i] + array[j] === target){
+        console.log(array[i]);
+        console.log([i,j]);
+        return [i,j];
+      }
+      }
+    }
+  return "no indices equal target";
+  // console.log([i,j]);
+  // return [i,j];
 }
 
-// twoSums(array, target);
+twoSums(array, target);
 
 module.exports = twoSums;

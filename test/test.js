@@ -7,7 +7,7 @@ var twoSums = require('../twoSums');
 describe('twoSums', function() {
   describe('invoke twoSums', function() {
     it('should return the 2 indices that equal the target', function() {
-      assert.equal([5,6], twoSums([1, 2, 3, 4, 5, 6, 7]));
+      assert.deepEqual([5,6], twoSums([1, 2, 3, 4, 5, 6, 7], 13));
     });
 
     it('should return "no indices equal target" when there are no results', function() {
