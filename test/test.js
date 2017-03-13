@@ -2,11 +2,12 @@
 
 var assert = require('assert');
 require('chai');
+var twoSums = require('../twoSums');
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
+describe('twoSums', function() {
+  describe('twoSums', function() {
+    it('should return the 2 indices that equal the target', function() {
+      assert.equal([5,6], twoSums([1, 2, 3, 4, 5, 6, 7]));
     });
   });
 });

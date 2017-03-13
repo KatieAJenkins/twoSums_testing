@@ -6,23 +6,24 @@
 // input: [1, 2, 3, 4, 5, 6, 7], 13 // output: [5,6]
 
 const array = [1, 2, 3, 4, 5, 6, 7];
+
 let target = 13;
 
 function twoSums (array, target){
-  
-  for(var i = 0; i < array.length; i++) {
-  console.log(array[i]);
-  console.log(array[i+1]);
-  if (array[i] + array[i+1] === target) {
-    return array[i] && array[i+1];
-    return [];
-  }
-  else {
-    return false;
-  }
-}
+  return [];
+//   for(var i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+//   console.log(array[i+1]);
+//   if (array[i] + array[i+1] === target) {
+//     return array[i] && array[i+1];
+//     return [];
+//   }
+//   else {
+//     return false;
+//   }
+// }
 }
 
-twoSums(array, target);
+// twoSums(array, target);
 
 module.exports = twoSums;
